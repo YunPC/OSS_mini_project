@@ -27,6 +27,34 @@ void print_all_records(Record records[]){
   }
 }
 
+void print_search_names_information(Record records[]){
+  char name[15];
+  int student_num;
+  
+  int input;
+  int inputId;
+  printf("choose information\n");
+  printf("1. student id, 2. name ");
+  scanf("%d",&input);
+  
+  if(input = 1){
+	printf("input id: ");
+	scanf("%d",&inputId);
+	for(int i=0;i<100;i++){
+		if(records[i].id==inputId){
+		printf("%d %s\n",records[i].id, records[i].name);
+		}
+	}	
+	if(input = 2){
+        printf("input name: ");
+        scanf("%s",inputName);
+        for(int i=0;i<100;i++){
+                if(strcmp(records[i].name,inputName)==0){
+                printf("%d %s\n",records[i].id, records[i].name);
+                	}
+        	}
+}
+	
 
 // Function: add_a_record()
 // Input: record - array of Records; this may contain empty elements in the middle
