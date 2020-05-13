@@ -5,6 +5,7 @@
 
 // function prototypes
 void print_all_records(Record[]);
+void print_search_names_information(Record records[]);
 void add_a_record(Record[]);
 void load_datafile(Record[]);
 void search_student(Record[]);
