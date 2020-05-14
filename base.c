@@ -40,17 +40,17 @@ void print_search_names_information(Record records[]){
   if(input = 1){
 	printf("input id: ");
 	scanf("%d",&inputId);
-	for(int i=0;i<100;i++){
-		if(records[i].id==inputId){
-		printf("%d %s\n",records[i].id, records[i].name);
+	for(int i=0;i<1000;i++){
+            if(records[i].id==inputId){
+	    printf("%d %s\n",records[i].id, records[i].name);
 		}
 	}	
 	if(input = 2){
         printf("input name: ");
         scanf("%s",inputName);
-        for(int i=0;i<100;i++){
-                if(strcmp(records[i].name,inputName)==0){
-                printf("%d %s\n",records[i].id, records[i].name);
+        for(int i=0;i<1000;i++){
+             if(strcmp(records[i].name,inputName)==0){
+             printf("%d %s\n",records[i].id, records[i].name);
                 	}
         	}
 }
